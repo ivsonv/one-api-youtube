@@ -60,7 +60,7 @@ namespace one_api.Controllers
             return Ok();
         }
 
-        [HttpDelete("{id:int}")] // delete
+        [HttpDelete("{id:int}")] // delete for tupla
         public IActionResult Delete([FromRoute] int id)
         {
             var entity = _context.Categories.FirstOrDefault(f => f.id == id);
