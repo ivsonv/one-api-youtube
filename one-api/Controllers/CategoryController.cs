@@ -40,7 +40,7 @@ namespace one_api.Controllers
             _context.SaveChanges();
         }
 
-        [HttpPut] // atualização
+        [HttpPut] // atualização de registro
         public IActionResult Update([FromBody] Domain.DTO.Category.CategoryItem _request)
         {
             if (_request.id <= 0)
